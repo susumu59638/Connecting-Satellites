@@ -54,6 +54,9 @@ def on_mouse_down(pos):
             if current_sat>0:
                 lines.append((satellites[current_sat-1].pos,satellites[current_sat].pos))
             current_sat = current_sat+1
+        else:
+            current_sat = 0
+            lines = []
 
 
 create_sats()
